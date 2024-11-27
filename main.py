@@ -20,7 +20,7 @@ class App:
         self.root.geometry(f"{window_width}x{window_height}+{position_right}+{position_top}")
 
         #Random nevek generálásához használt adat
-        self.names = ["Bálint", "János", "László", "Fanni", "Vivien"]
+        self.names = ["Bálint", "János", "Napsugár", "Fanni", "Adél"]
         self.data_handler = CustomHandler_TB()
 
         #GUI Elemek
@@ -42,13 +42,13 @@ class App:
         random_name = choice(self.names)  #A lista egy elemének (név) kiválasztása
         self.data_handler.add_data(random_name)
         processed = process_data_TB(self.data_handler.get_data())
-        self.label.config(text=f"Név: {random_name} | Tömbbeli pozíció: {processed}")
+        self.label.config(text=f"Név: {random_name} | Nevek hossza: {processed}")
 
     def generate_factorial(self):
         """Random szám faktoriálisának a megjelenítése"""
         number = randint(1, 10)
         result = factorial(number)
-        self.label.config(text=f"{number}!={result}")
+        self.label.config(text=f"{number}! = {result}")
 
 if __name__ == "__main__":
     root = tk.Tk()

@@ -1,7 +1,7 @@
-Random név és faktoriális generáló 
+Random név és faktoriális 
 
 Leírás
-- A program véletlenszerű neveket és faktoriálisok értékét generálja egy grafikus felületen. Ezeket az adatokat feldolgozza és tárolja.
+- A program véletlenszerű neveket és faktoriálisok értékét generálja egy grafikus felületen. Ezeket az adatokat feldolgozza és tárolja a memóriában.
 
 Használt modulok:
 1. **data_utils_TB.py** (Saját modul):
